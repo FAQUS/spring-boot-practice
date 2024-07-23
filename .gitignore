@@ -1,0 +1,40 @@
+# .gitignore for maven
+target/
+
+# IDE support files
+/.classpath
+/.launch
+/.project
+/.settings
+/*.launch
+/*.tmproj
+/ivy*
+/eclipse
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+*.log
+*.log.*
+
+# project release file
+/*.war
+
+# plugin release file
+/*.zip
+/*.zip.sha1
+
+#.gitignore for java
+*.class
+
+# "temporary" build files
+target/
+out/
+build/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
