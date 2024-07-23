@@ -2,7 +2,7 @@
 target/
 
 # IDE support files
-.idea
+.idea/
 /.classpath
 /.launch
 /.project
