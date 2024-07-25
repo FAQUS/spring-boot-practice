@@ -6,6 +6,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-cache</module>
+        <module>spring-boot-mybatis-plus</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -17,6 +18,31 @@
     <artifactId>spring-boot-practice</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <mybatis-plus-version>3.2.0</mybatis-plus-version>
+        <mysql-connector-java-version>5.1.49</mysql-connector-java-version>
+        <lombok-version>1.18.12</lombok-version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>

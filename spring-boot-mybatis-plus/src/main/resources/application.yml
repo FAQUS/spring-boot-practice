@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring-boot-practice?usessl=false&useEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: saferycom
+
+mybatis-plus:
+  type-aliases-package: com.example.entity

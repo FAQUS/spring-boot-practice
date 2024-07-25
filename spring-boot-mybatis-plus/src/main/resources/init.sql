@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS `user`;
+
+CREATE TABLE `user`
+(
+    id BIGINT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+    name VARCHAR(30) NULL DEFAULT NULL COMMENT '姓名',
+    age INT NULL DEFAULT NULL COMMENT '年龄',
+    email VARCHAR(50) NULL DEFAULT NULL COMMENT '邮箱',
+    is_delete INT NOT NULL COMMENT '是否删除0:正常 1:删除',
+    create_by VARCHAR(50) NOT NULL COMMENT '创建人',
+    create_time DATETIME NOT NULL COMMENT '创建时间',
+    update_by VARCHAR(50) NULL COMMENT '更新人',
+    update_time DATETIME NULL COMMENT '更新时间',
+    PRIMARY KEY (id)
+);
